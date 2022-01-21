@@ -11,7 +11,7 @@ export default function ConsultUser() {
     const password= useRef();
     const passwordAgain = useRef();
 
-  const Url='https://pwadmin.herokuapp.com/users/'
+  const Url='https://pwadmin.herokuapp.com/api/users/'
 
   //estado del modal:
   const [estadoModal1, cambiarEstadoModal1]= useState(false);
@@ -49,7 +49,7 @@ const [busqueda,setBusqueda]=useState("");
 
 // peticion get usuarios:
 const getUsers= async()=>{
-   const res= await axios.get("users/users")
+   const res= await axios.get("https://pwadmin.herokuapp.com/api/users/users")
    try{
     setUsuarios(res.data);
     setTablaUsuarios(res.data);

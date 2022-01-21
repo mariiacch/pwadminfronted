@@ -9,7 +9,7 @@ export default function ConsultUser() {
 
     
 
-  const Url='https://pwadmin.herokuapp.com/ventaMensual/'
+  const Url='https://pwadmin.herokuapp.com/api/ventaMensual/'
 
   //estado del modal:
   const [estadoModal1, cambiarEstadoModal1]= useState(false);
@@ -42,7 +42,7 @@ const [busqueda,setBusqueda]=useState("");
 
 // peticion get usuarios:
 const getUsers= async()=>{
-   const res= await axios.get("ventaMensual/sellers")
+   const res= await axios.get("https://pwadmin.herokuapp.com/api/ventaMensual/sellers")
    try{
     setUsuarios(res.data);
     setTablaUsuarios(res.data);

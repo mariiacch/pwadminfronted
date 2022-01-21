@@ -20,7 +20,7 @@ const [busqueda,setBusqueda]=useState("");
 
 // peticion get usuarios:
 const getPro= async()=>{
-    const res= await axios.get("https://pwadmin.herokuapp.com/proovedor/proovedors")
+    const res= await axios.get("https://pwadmin.herokuapp.com/api/proovedor/proovedors")
     try{
       setProovedors(res.data);
       setTablaProovedors(res.data);

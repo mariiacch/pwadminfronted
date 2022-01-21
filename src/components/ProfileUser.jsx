@@ -96,7 +96,7 @@ const handleClick= async e =>{
     try{
         
     const res= await axios.put(
-        `https://pwadmin.herokuapp.com/users?id=${id}`, putUser)
+        `https://pwadmin.herokuapp.com/api/users?id=${id}`, putUser)
     
     setUserPut(res.data);
     //dispatch({ type: "LOGIN_SUCCESS", payload: res.data });

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router';
 import axios from 'axios'
 
 
-const UrlStock='https://pwadmin.herokuapp.com/stockProducts/register'
+const UrlStock='https://pwadmin.herokuapp.com/api/stockProducts/register'
 
 export default function ConsultProo() {
   const navigate= useNavigate();
@@ -51,7 +51,7 @@ const [busqueda,setBusqueda]=useState("");
 
 // peticion get usuarios:
 const getPro= async()=>{
-    const res= await axios.get("products/products")
+    const res= await axios.get("https://pwadmin.herokuapp.com/api/products/products")
     try{
       setProovedors(res.data);
       setTablaProovedors(res.data);
@@ -154,7 +154,7 @@ useEffect(()=>{
       }
      
    }
-   const Url=`https://pwadmin.herokuapp.com/products/` 
+   const Url=`https://pwadmin.herokuapp.com/api/products/` 
    //funcion editar 
   //creo una variable auxiliar para poder almacenar la datanueva
   const editar = async()=>{

@@ -22,7 +22,7 @@ const handleClick=(e)=>{
         contact:contact.current.value,
     }
     try{
-      axios.post("https://pwadmin.herokuapp.com/proovedor/register",newProovedor)
+      axios.post("https://pwadmin.herokuapp.com/api/proovedor/register",newProovedor)
       navigate("/ConsultProovedor")
         
       
