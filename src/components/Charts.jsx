@@ -18,7 +18,7 @@ const VentaMensuales = Object.values(VentaMensual);
     useEffect(()=>{
         const fetchVentasMensual= async()=>{
             const res= await axios.get(
-               'ventaMensual/sellers');
+               'https://pwadmin.herokuapp.com/ventaMensual/sellers');
                setVentaMensual(res.data);
 
                //console.log(VentaMensual)
