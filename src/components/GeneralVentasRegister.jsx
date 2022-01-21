@@ -18,7 +18,7 @@ export default function RegisterProduct() {
     }
     
     try{
-        axios.post("ventaSemanal/register",newRegister)
+        axios.post("https://pwadmin.herokuapp.com/ventaSemanal/register",newRegister)
           //navigate("/ConsultClient")
           document.getElementById('formProduct').reset();
 

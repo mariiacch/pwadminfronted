@@ -45,7 +45,7 @@ console.log(NewClients)
 // peticion get usuarios:
 useEffect(() => {
   const getPro = async () => {
-    const res= await axios.get("clients/clients")
+    const res= await axios.get("https://pwadmin.herokuapp.com/clients/clients")
     try{
       setClients(res.data);
       setNewClients(res.data);
@@ -110,7 +110,7 @@ const filtrar=(terminoBusqueda)=>{
       
     }
 
-    const Url=`clients/`
+    const Url=`https://pwadmin.herokuapp.com/clients/`
 
          //funcion para eliminar
 //filtra la data , los users que se queden son los que no coinciden con el user que se selecciono  setUsuarios(usuarios.filter(user=>user._id!==userSeleccionado._id));

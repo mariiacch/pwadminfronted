@@ -11,7 +11,7 @@ export default function ConsultUser() {
     const password= useRef();
     const passwordAgain = useRef();
 
-  const Url='users/'
+  const Url='https://pwadmin.herokuapp.com/users/'
 
   //estado del modal:
   const [estadoModal1, cambiarEstadoModal1]= useState(false);

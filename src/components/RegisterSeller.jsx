@@ -28,7 +28,7 @@ const navigate= useNavigate();
             
         }
         try{
-         await axios.post("vendedor/register", newSeller)
+         await axios.post("https://pwadmin.herokuapp.com/vendedor/register", newSeller)
           
            navigate("/ConsultSeller")
 

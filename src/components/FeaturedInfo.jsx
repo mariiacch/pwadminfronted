@@ -19,20 +19,20 @@ const [TotalVentaMensual,setTotalVentaMensual]= useState({});
   useEffect(()=>{
   const fetchTotalClient= async()=>{
       const res= await axios.get(
-         'clients/totalclients');
+         'https://pwadmin.herokuapp.com/clients/totalclients');
          setTotalclient(res.data);
          
   };
   const fetchVentas= async()=>{
     const res= await axios.post(
-       'ventaSemanal/getlast');
+       'https://pwadmin.herokuapp.com/ventaSemanal/getlast');
        setTotalVenta(res.data);
        
 };
 
 const fetchVentasMensual= async()=>{
   const res= await axios.post(
-     'ventaMensual/getlast');
+     'https://pwadmin.herokuapp.com/ventaMensual/getlast');
      setTotalVentaMensual(res.data);
      
 };

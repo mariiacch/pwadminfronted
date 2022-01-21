@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 //import { axiosInstance } from '../../../config';
 import axios from 'axios'
 
-const urlStock="/stockProducts/stock";
-const urlG='/stockProducts/';
+const urlStock="https://pwadmin.herokuapp.com/stockProducts/stock";
+const urlG='https://pwadmin.herokuapp.com/stockProducts/';
 
 
 export default function ConsultClient() {

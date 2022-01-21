@@ -29,7 +29,7 @@ export default function RegisterProduct() {
        
     }
     try{
-        axios.post("products/register",newProduct)
+        axios.post("https://pwadmin.herokuapp.com/products/register",newProduct)
           // navigate("/ConsultClient")
           document.getElementById('formProduct').reset();
 

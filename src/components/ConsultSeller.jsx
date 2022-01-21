@@ -6,7 +6,7 @@ import {Modal, ModalBody, ModalFooter} from 'reactstrap';
 //import { axiosInstance } from '../../../config';
 
 
-const Url='vendedor/'
+const Url='https://pwadmin.herokuapp.com/vendedor/'
 
 export default function ConsultSeller() {
 //estado 1 almacena estatico:
@@ -20,7 +20,7 @@ const [busqueda,setBusqueda]=useState("");
 
 // peticion get vendedores:
 const getSeller= async()=>{
-  const res= await axios.get("vendedor/sellers")
+  const res= await axios.get("https://pwadmin.herokuapp.com/vendedor/sellers")
   try{
    setVendedores(res.data);
    setTablaVendedores(res.data);

@@ -30,7 +30,7 @@ console.log(bunUser.username)
 // peticion get usuarios:
 useEffect(() => {
     const fetchUser = async () => {
-        const res = await axios.get(`users?username=${username}`);
+        const res = await axios.get(`https://pwadmin.herokuapp.com/users?username=${username}`);
         setUsuario(res.data);
         //dispatch({ type: "CURRENT_USER", payload: res.data });
         //console.log(dispatch)
@@ -96,7 +96,7 @@ const handleClick= async e =>{
     try{
         
     const res= await axios.put(
-        `users?id=${id}`, putUser)
+        `https://pwadmin.herokuapp.com/users?id=${id}`, putUser)
     
     setUserPut(res.data);
     //dispatch({ type: "LOGIN_SUCCESS", payload: res.data });

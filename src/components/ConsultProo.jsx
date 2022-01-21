@@ -5,7 +5,7 @@ import {Modal, ModalBody, ModalFooter} from 'reactstrap';
 
 
 
-const Url='proovedor/'
+const Url='https://pwadmin.herokuapp.com/proovedor/'
 
 export default function ConsultProo() {
 
@@ -20,7 +20,7 @@ const [busqueda,setBusqueda]=useState("");
 
 // peticion get usuarios:
 const getPro= async()=>{
-    const res= await axios.get("proovedor/proovedors")
+    const res= await axios.get("https://pwadmin.herokuapp.com/proovedor/proovedors")
     try{
       setProovedors(res.data);
       setTablaProovedors(res.data);

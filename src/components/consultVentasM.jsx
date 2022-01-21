@@ -9,7 +9,7 @@ export default function ConsultUser() {
 
     
 
-  const Url='ventaMensual/'
+  const Url='https://pwadmin.herokuapp.com/ventaMensual/'
 
   //estado del modal:
   const [estadoModal1, cambiarEstadoModal1]= useState(false);

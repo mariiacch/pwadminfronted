@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router';
 import axios from 'axios'
 
 
-const UrlStock='stockProducts/register'
+const UrlStock='https://pwadmin.herokuapp.com/stockProducts/register'
 
 export default function ConsultProo() {
   const navigate= useNavigate();
@@ -154,7 +154,7 @@ useEffect(()=>{
       }
      
    }
-   const Url=`/products/` 
+   const Url=`https://pwadmin.herokuapp.com/products/` 
    //funcion editar 
   //creo una variable auxiliar para poder almacenar la datanueva
   const editar = async()=>{
