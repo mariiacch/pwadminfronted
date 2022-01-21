@@ -34,7 +34,7 @@ export default function Register() {
 
             };
             try{
-              await axios.post("http://localhost:8800/api/auth/register", Newuser)
+              await axios.post("https://pwadmin.herokuapp.com/api/auth/register", Newuser)
               navigate("/ConsultUser")
              
             
