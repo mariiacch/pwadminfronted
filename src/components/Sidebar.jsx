@@ -177,7 +177,7 @@ export default function Sidebar() {
                  <ul className="sidebarList"> 
 
                  <h3 className="sidebarTitle bg-grey">Facturas</h3>
-                 <a href="https://pwadmin-factura.netlify.app/">
+                <a  className="links" href="https://pwadmin-factura.netlify.app/" target="_blank">
                  <li className="sidebarListItem " key="uniqueId15">
                     
                     Genera Factura
