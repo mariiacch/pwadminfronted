@@ -105,11 +105,11 @@ export default function Login() {
 
 //mobile:
 
-const isMobile = useMediaQuery({maxWidth:DeviceSize.mobile})
+//const isMobile = useMediaQuery({maxWidth:DeviceSize.mobile})
 
     return (
       <>
-      {!isMobile && 
+
        <Login>
            
            <LoginWrapper>
@@ -146,7 +146,7 @@ const isMobile = useMediaQuery({maxWidth:DeviceSize.mobile})
                 </div>
            </LoginWrapper>
        </Login> 
-    }
+    
        </>
     ) 
 
