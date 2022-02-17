@@ -28,6 +28,8 @@ import GeneralVentasMensual from './pages/GeneralVentasMensual';
 import CreateFactura from './pages/CreateFact';
 import ConsultVentasDiarias from './pages/ConsultVentasDiarias';
 import ConsultVentasMensuales from './pages/ConsultVentasMensual';
+import { MobileLogin } from './components/responsive/MobileLogin';
+import AppMobile from './components/responsive/AppMobile';
 
 
 
@@ -36,6 +38,7 @@ export default function App() {
   const {user}= useContext(AuthContext)
 
   return (
+    
     <BrowserRouter>
     <Routes>
         <Route  exact
