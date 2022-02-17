@@ -32,7 +32,9 @@ export default function Login() {
         align-items: center;
         justify-content: center;
         @media (max-width: 768px) {
-            background-color: red;
+           // background-color: red;
+            display: flex;
+            flex-direction:column;
         }
     `;
     const LoginWrapper = styled.div`
