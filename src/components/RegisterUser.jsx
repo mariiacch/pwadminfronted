@@ -73,7 +73,7 @@ export default function Register() {
                         <span className='loginAster'>*</span>
                     </h3>
                     <span className="loginDesc">
-                        Registro de usuarios para el sistema
+                        Registro de Usuarios para el sistema
                     </span>
                     
                    

@@ -62,7 +62,7 @@ const handleClick=(e)=>{
                         <span className='loginAster'>*</span>
                     </h3>
                     <span className="loginDesc">
-                        Registro de proovedores para el sistema
+                        Registro de Clientes para el sistema
                     </span>
                     
                     

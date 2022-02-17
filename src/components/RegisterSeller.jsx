@@ -63,7 +63,7 @@ const navigate= useNavigate();
                         <span className='loginAster'>*</span>
                     </h3>
                     <span className="loginDesc">
-                        Registro de vendedores para el sistema
+                        Registro de Vendedores para el sistema
                     </span>
                     
                     

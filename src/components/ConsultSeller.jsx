@@ -217,7 +217,7 @@ useEffect(()=>{
         <div className="containerModal">
         
          
-            <h3 className="bg-grey" >Editar Usuario</h3>
+            <h3 className="bg-grey" >Editar Vendedor</h3>
             <input
               className="none"
               readOnly
