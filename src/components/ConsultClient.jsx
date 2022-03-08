@@ -110,7 +110,7 @@ const filtrar=(terminoBusqueda)=>{
       
     }
 
-    const Url=`https://pwadmin.herokuapp.com/clients/`
+    const Url=`https://pwadmin.herokuapp.com/api/clients/clients`
 
          //funcion para eliminar
 //filtra la data , los users que se queden son los que no coinciden con el user que se selecciono  setUsuarios(usuarios.filter(user=>user._id!==userSeleccionado._id));
