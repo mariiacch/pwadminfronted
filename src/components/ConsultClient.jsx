@@ -45,7 +45,7 @@ console.log(NewClients)
 // peticion get usuarios:
 useEffect(() => {
   const getPro = async () => {
-    const res= await axios.get("https://pwadmin.herokuapp.com/api/clients/")
+    const res= await axios.get("https://pwadmin.herokuapp.com/api/clients/clients")
     try{
       setClients(res.data);
       setNewClients(res.data);
