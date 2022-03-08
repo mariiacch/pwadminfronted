@@ -13,7 +13,8 @@ export const AuthContext = createContext(INITIAL_STATE)
 
 //Creo el wrapper de toda la app
 export const AuthContextProvider=({children})=>{
- 
+
+    //hook useReducer
   const [state, dispatch] = useReducer(AuthReducer, INITIAL_STATE)
 
  useEffect(()=>{

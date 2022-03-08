@@ -6,7 +6,7 @@ import {Modal, ModalBody, ModalFooter} from 'reactstrap';
 //import { axiosInstance } from '../../../config';
 
 
-const Url='https://pwadmin.herokuapp.com/vendedor/api'
+const Url='https://pwadmin.herokuapp.com/api/vendedor/sellers'
 
 export default function ConsultSeller() {
 //estado 1 almacena estatico:

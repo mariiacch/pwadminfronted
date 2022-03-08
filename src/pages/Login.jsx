@@ -5,8 +5,7 @@ import { useContext, useRef } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import CircularProgress from '@mui/material/CircularProgress';
 import { loginCall} from "../apiCalls"
-import { useMediaQuery } from '@mui/material';
-import { DeviceSize } from '../components/responsive';
+
 
 
 
@@ -108,9 +107,6 @@ export default function Login() {
 `;
 
 
-//mobile:
-
-//const isMobile = useMediaQuery({maxWidth:DeviceSize.mobile})
 
     return (
       <>
