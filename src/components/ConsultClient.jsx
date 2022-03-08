@@ -147,7 +147,7 @@ const filtrar=(terminoBusqueda)=>{
         }
         return clientNuevo;
         
-        console.log(clientNuevo)
+        //console.log(clientNuevo)
          
         
       });
