@@ -21,12 +21,13 @@ const handleClick=(e)=>{
     const newClient={
         nombres:nombres.current.value,
         cedula:cedula.current.value,
-        contact:contact.current.value,
         licencia:licencia.current.value,
-        ciudad:ciudad.current.value
+        ciudad:ciudad.current.value,
+        contact:contact.current.value,    
+        
     }
     try{
-     axios.post("http://localhost:8800/api/clients/register",newClient)
+     axios.post("https://pwadmin.herokuapp.com/api/clients/register",newClient)
      
         navigate("/ConsultClient")
       
