@@ -22,9 +22,9 @@ export default function Register() {
 
     const handleClick= async(e)=>{
         e.preventDefault();
-        if(passwordAgain.current.value !== password.current.value){
+       // if(passwordAgain.current.value !== password.current.value){
             passwordAgain.current.setCustomValidity("No coinciden las contraseñas!")
-        }else{
+      //  }else{
             const Newuser={
                 nombres:nombres.current.value,
                 apellidos:apellidos.current.value,
@@ -41,7 +41,7 @@ export default function Register() {
             }catch(err){
                 console.log(err)
             }
-        }
+       // }
 
     }
     
@@ -91,8 +91,8 @@ export default function Register() {
                         <input placeholder="Contraseña" type="password" className="loginInput" ref={password} required
                         minLength="6" />
 
-                        <input placeholder="Verifica la contraseña" type="password" className="loginInput" ref={passwordAgain} required
-                        minLength="6" />
+                      {/**<input placeholder="Verifica la contraseña" type="password" className="loginInput" ref={passwordAgain} required
+                        minLength="6" /> */}  
 
                         <input placeholder="Nombres" type="text" className="loginInput" ref={nombres} required
                                                 minLength="6" />
