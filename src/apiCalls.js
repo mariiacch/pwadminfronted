@@ -5,11 +5,8 @@ import axios from "axios"
 
 //login
 //http://localhost:8800/api/auth/login
-  //  if(passwordAgain.current.value !== password.current.value){
-   //     passwordAgain.current.setCustomValidity("No coinciden las contraseñas!")
 export const loginCall = async (userCredential, dispatch) => {
   dispatch({ type: "LOGIN_START" });
-  
   try {
     const res = await axios.post("https://pwadmin.herokuapp.com/api/auth/login", userCredential);
     dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
@@ -18,7 +15,6 @@ export const loginCall = async (userCredential, dispatch) => {
   } catch (err) {
     dispatch({ type: "LOGIN_FAILURE", payload: err });
     console.log(err);
-    console.log(' no coinciden los datos')
   }
 };
 
