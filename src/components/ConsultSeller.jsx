@@ -4,9 +4,9 @@ import { GlobalStyles } from '../styles/GlobalStyles';
 import axios from "axios";
 import {Modal, ModalBody, ModalFooter} from 'reactstrap';
 //import { axiosInstance } from '../../../config';
+//api/vendedor
 
-
-const Url='https://pwadmin.herokuapp.com/api/vendedor'
+const Url='https://pwadmin.herokuapp.com/api/vendedor/'
 
 export default function ConsultSeller() {
 //estado 1 almacena estatico:
