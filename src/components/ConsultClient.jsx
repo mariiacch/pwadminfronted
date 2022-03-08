@@ -79,10 +79,6 @@ const filtrar=(terminoBusqueda)=>{
     
 }
 
-
-  
-
-
   //con esta funcion se logra asignar al estado lo que el usuario esta escribiendo , en base al nombre del input
   //asi que el estado debe coincidir con el nombre que se le da al input
   //para los modales
@@ -110,7 +106,7 @@ const filtrar=(terminoBusqueda)=>{
       
     }
 
-    const Url=`https://pwadmin.herokuapp.com/api/clients/clients`
+    const Url=`https://pwadmin.herokuapp.com/api/clients/`
 
          //funcion para eliminar
 //filtra la data , los users que se queden son los que no coinciden con el user que se selecciono  setUsuarios(usuarios.filter(user=>user._id!==userSeleccionado._id));
