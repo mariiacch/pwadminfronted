@@ -8,7 +8,7 @@ import axios from "axios"
 export default function Register() {
     const navigate= useNavigate();
 
-    const nombres= useRef();
+    const empresa= useRef();
     const rif= useRef();
     const email = useRef(); 
     const contact = useRef();
@@ -16,7 +16,7 @@ export default function Register() {
 const handleClick=(e)=>{
     e.preventDefault();
     const newProovedor={
-        nombres:nombres.current.value,
+        empresa:empresa.current.value,
         rif:rif.current.value,
         email:email.current.value,
         contact:contact.current.value,
@@ -67,7 +67,7 @@ const handleClick=(e)=>{
                         
                         
                                 
-                        <input placeholder="Nombres" className="loginInput" ref={nombres} required/>
+                        <input placeholder="Nombres" className="loginInput" ref={empresa} required/>
 
                         <input placeholder="Rif" className="loginInput" ref={rif} required/>
 
