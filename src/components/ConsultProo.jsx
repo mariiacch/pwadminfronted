@@ -5,7 +5,7 @@ import {Modal, ModalBody, ModalFooter} from 'reactstrap';
 
 
 
-const Url='https://pwadmin.herokuapp.com/api/proovedor/proovedors/'
+const Url='https://pwadmin.herokuapp.com/api/proovedor/'
 
 export default function ConsultProo() {
 
