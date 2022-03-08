@@ -149,6 +149,7 @@ const filtrar=(terminoBusqueda)=>{
           client.ciudad=clientSeleccionado.ciudad;
          
         }
+        return clientNuevo;
         
         console.log(clientNuevo)
          
@@ -170,24 +171,7 @@ const filtrar=(terminoBusqueda)=>{
   }
 
 
-  //handlesubmitEdit
-  const handleSubmitEdit = async (e) => {
-    e.preventDefault();
-    const response = await axios.put(`${Url}${clientSeleccionado.id}`, clientSeleccionado)
-    if (response.status === 200) {
-        console.log(
-            'Guardado!',
-            `El registro ${clientSeleccionado.id} ha sido actualizado exitosamente!`,
-            'success'
-        )
-        //handleCloseModal();
-        //setUpdateList(!updateList)
-        //setNewClients(!NewClients);
-    }else {
-       console.log('err'
-        )
-    }
-}
+ 
 
 
 
