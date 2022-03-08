@@ -23,8 +23,9 @@ const navigate= useNavigate();
         const newSeller={
             nombre:nombre.current.value,
             apellido:apellido.current.value,
-            contact:contact.current.value,
             cedula:cedula.current.value,
+            contact:contact.current.value,
+           
             
         }
         try{
