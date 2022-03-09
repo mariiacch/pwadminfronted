@@ -303,25 +303,7 @@ useEffect(()=>{
             />
             <br />
             
-            <label className='labelModal'>Reestablece Contraseña</label>
-            <input
-              className="inputModal"
-              type="password"
-              name="password"
-              ref={password}
-              value={userSeleccionado && userSeleccionado.password}
-              onChange={handleChangeModals}
-            />
-            <br />
-            <label className='labelModal'>Confirma Contraseña</label>
-            <input
-              className="inputModal"
-              type="password"
-              name="passwordAgain"
-              ref={passwordAgain}
-              value={userSeleccionado && userSeleccionado.passwordAgain}
-              onChange={handleChangeModals}
-            />
+           
             
             
           </div>
