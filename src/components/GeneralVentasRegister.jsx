@@ -16,9 +16,10 @@ export default function RegisterProduct() {
         cantidadBolivares:cantidadBolivares.current.value,
         
     }
+    //https://pwadmin.herokuapp.com/api/proovedor/register
     
     try{
-        axios.post("https://pwadmin.herokuapp.com/ventaSemanal/api/register",newRegister)
+        axios.post("https://pwadmin.herokuapp.com/api/ventaSemanal/register",newRegister)
           //navigate("/ConsultClient")
           document.getElementById('formProduct').reset();
 
